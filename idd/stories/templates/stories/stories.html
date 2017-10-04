@@ -1,0 +1,9 @@
+{% extends "mainlanding/base.html" %}
+
+{% block content %}
+
+    {% for post in object_list %}
+    <h5>{{ post.date|date:"m-d-Y" }}<a href="/stories/{{post.id}}"> {{ post.title }}</a></h5>
+    {% endfor %}
+
+{% endblock %}
