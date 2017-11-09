@@ -23,9 +23,9 @@ SECRET_KEY = 'SECRET_KEY'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['westbrookjc.pythonanywhere.com']
+ALLOWED_HOSTS = ['westbrookjc.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['westbrookjc.pythonanywhere.com']
 INSTALLED_APPS = [
     'mainlanding',
     'stories',
+    'projects',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
